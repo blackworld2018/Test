@@ -28,8 +28,7 @@ public class Test_3_manager : Singleton<Test_3_manager>
 
     public GameObject GetGameObjectAll(string name)
     {
-        GameObject gameObject;
-        GameObjectAllDictionary.TryGetValue(name, out gameObject);
+        GameObjectAllDictionary.TryGetValue(name, out GameObject gameObject);
         return gameObject;
     }
 
@@ -49,8 +48,7 @@ public class Test_3_manager : Singleton<Test_3_manager>
 
     public GameObject GetGameObjectInCarmera(string name)
     {
-        GameObject gameObject;
-        GameObjectInCarmeraDictionary.TryGetValue(name, out gameObject);
+        GameObjectInCarmeraDictionary.TryGetValue(name, out GameObject gameObject);
         return gameObject;
     }
 
